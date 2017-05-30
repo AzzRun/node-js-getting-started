@@ -10,7 +10,7 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
 app.get('/', function(request, response) {
-  res.json({ a: 1 });
+  app.json({ a: 1 });
 
 });
 
