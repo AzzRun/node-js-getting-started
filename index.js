@@ -10,7 +10,7 @@ app.use(express.static(__dirname + '/public'));
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
-app.get('/', function(req, res){
+app.post('/', function(req, res){
   res.json({
         speech: "this is a response",
         displayText:  "this is a response",
