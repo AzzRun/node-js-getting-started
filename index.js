@@ -13,13 +13,6 @@ app.set('view engine', 'ejs');
 app.get('/', function(request, response) {
   response.render('pages/index');
 });
-app.post('/app', function(req, res){
- // request.get('http://raspberrydomotic.ddns.net:8080/json.htm?username=YWRtaW4=&password=em52OGEyYjU=&type=command&param=switchlight&idx=1&switchcmd=Off',options,function(err,res,body){
-  //if(!err && res.statusCode === 200){
-    response.render("test");
-
-  // }});
-});
 
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
