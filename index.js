@@ -11,7 +11,11 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
 app.get('/', function(req, res){
-  res.json({ speak: "plop" });
+  res.json({
+        speech: "this is a response",
+        displayText:  "this is a response",
+        source: "smartHome-api"
+    });
 });
 
 
